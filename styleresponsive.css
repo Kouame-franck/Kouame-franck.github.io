@@ -1,0 +1,195 @@
+@media all and (max-width:900px){
+   
+    header{
+    height: 50px;
+    }
+    nav{
+    display: none;
+    }
+    #logo{
+    padding: 0;
+    padding-right: 0;
+    background-color: inherit;
+    height: auto;
+    }
+    #logo h3{
+    display: none;
+    }
+    #logo img{
+    margin: 0;
+    background-color: white;
+    width: 40px;
+    }
+    .accueil{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.685);
+        color: white;
+        text-align: center;
+        align-items: center;
+        padding: 5px;
+        font-size: 0.6rem;
+        
+        }
+        .accueil h1{
+        font-size: 0.9rem;
+        margin: 0;padding: 0;
+        }
+        #mot{
+        display: none;
+        }
+        .elips{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgb(209, 209, 209);
+            margin: 5px;
+        }
+        .active{
+        background-color: green;
+        }
+        .actions{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            bottom: 0px;
+            left: 50%;
+            transform: translate(-50%,0%);
+            width: 100%;
+            
+            }
+            .actions a{
+                width: 60%;
+                margin: 10px;
+                text-decoration: none;
+                color: rgb(252, 119, 23);
+                outline: none;
+                }
+                .action{
+                
+                height: 15px;
+                border: 1px solid rgb(252, 119, 23);
+                border-radius: 20px;
+                color: rgb(252, 119, 23);
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                padding-top: 0px;
+                padding: 5px;
+                font-size: inherit;
+                margin:0 10px;
+                
+                }
+
+    #apropos{
+    padding: 10px ;
+    text-align: center;
+    justify-content: center;
+    margin: 20px 0;
+    }
+    .confiances{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    background-color: rgba(233, 233, 232, 0.178);
+    box-shadow: 0px 2px 20px rgb(170, 170, 170); 
+    width: 100%;
+    align-items: center;
+    }
+    #confiance{
+        font-weight: inherit;
+        text-align: center;
+        font-size: 0.8rem;
+        width: 100%;
+        color: white;
+        font-style: oblique;
+        box-sizing: border-box;
+        padding: 10px ;
+        background-color: rgb(252, 119, 23);
+        
+        }
+    .partenaires{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content: center;
+    }
+    .partenaire{
+    box-sizing: border-box;
+    margin: 10px;
+    border: none;
+    height: 50px;
+    }
+    .partenaire img{
+    height: 50px;
+    max-height: 80px;
+    margin: 0 5px;
+    }
+    .sections{
+    text-align: center;
+    color: rgb(252, 119, 23);
+    font-size: 1rem;
+        }
+
+    #services{
+        margin: 20px 0;
+        padding: 10px;
+        scroll-behavior: smooth;
+    }
+    .service{
+        flex: 1 0 100%;
+        box-sizing: border-box;
+        border: none;
+        margin: 10px 0;
+        height: 250px;
+        box-shadow: 2px 2px 15px rgb(192, 191, 191);
+        border-radius: 5px;
+        padding: 0 10px ;
+        background-color: white;
+        
+        }
+
+    .voirplus{
+    position: absolute;
+    bottom: -35px;
+    left: -50%;
+    transform: translateX(-50%);
+    color:rgb(252, 119, 23) ;
+    font-weight: bold;
+    background-color: inherit;
+    border: 0.5px solid rgb(252, 119, 23);
+    padding: 5px 20px;
+    border-radius: 15px;
+    width: 100%;
+    }
+    #long{
+    font-size: 0.9rem;
+    }
+    .description .image{
+    flex: 1 0 50%;
+    margin: 0;
+    padding: 0;
+    
+    }
+    .description .texts{
+    padding: 0 5px;
+    position: relative;
+    font-size: 0.8rem;
+    }
+    .containers{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    }
+}
