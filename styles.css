@@ -330,6 +330,9 @@ display: flex;
 display: flex;
 flex-direction: column;
 }
+.princip div span{
+margin: 5px 0;
+}
 .coor i{
 padding: 15px;
 color: white;
@@ -358,11 +361,13 @@ margin: 10px 0;
 padding: 10px;
 border: 0.5px solid gray;
 height: 75px;
+text-align: start;
 }
 textarea{
 border: none;
 outline: none;
 background-color: inherit;
+
 }
 #envoyer{
 color: rgb(252, 119, 23);
@@ -406,7 +411,7 @@ padding: 20px;
 box-sizing: border-box;
 background-color: black;
 color: rgba(182, 181, 181, 0.87);
-font-size: 0.8rem;
+font-size: 0.8rem; 
 }
 footer p{
 border-top: 0.5px solid rgb(114, 114, 114);
@@ -443,7 +448,6 @@ width: 33%;
 margin: 0 30px;
 }
 .logo-footer img{
-
 width: 100px;
 height: auto;
 }
