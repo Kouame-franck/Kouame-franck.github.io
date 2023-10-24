@@ -84,11 +84,14 @@ margin-right: 20px;
 }
 
 #presentation{
-width: 100%;
-box-sizing: border-box;
-position: relative;
-
-}
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    
+    }
+    #presentations{
+    display: none;
+    }
 .accueil{
 position: absolute;
 left: 50%;

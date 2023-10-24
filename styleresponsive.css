@@ -20,14 +20,20 @@
     background-color: white;
     width: 40px;
     }
+    /* #presentation{
+    display: none;
+    } */
+    /* #presentations{
+        display: initial;
+        } */
     .accueil{
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
         width: 80%;
-        height: 100px;
-        background-color: rgba(0, 0, 0, 0.685);
+        height: 80%;
+        background-color: rgba(0, 0, 0, 0.418);
         color: white;
         text-align: center;
         align-items: center;
@@ -35,13 +41,67 @@
         font-size: 0.6rem;
         
         }
+        #presentation button{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            padding: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            border-radius: 5px;
+            border-radius: 50%;
+            color: rgba(255, 255, 255, 0.815);
+            background-color:rgba(0, 0, 0, 0.411) ;
+            }
+        #presentation i{
+            font-size: 1rem;
+            }
+        .departement{
+            position: absolute;
+            top: 10px;
+            color: rgb(252, 119, 23);
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.411);
+            padding: 0 20px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            width: 100%;
+            display: none;
+            }
         .accueil h1{
         font-size: 0.9rem;
         margin: 0;padding: 0;
         }
         #mot{
-        display: none;
+        /* display: none; */
+        animation: scroll-up 10s linear infinite; /* 10s est la durée de l'animation, vous pouvez ajuster selon vos besoins */
+
         }
+
+        .mots {
+            position: absolute;
+            top: 50px;
+            height: 30%; /* Hauteur maximale de la div */
+            overflow: hidden; /* Pour cacher le texte qui dépasse */
+            padding: 5px;
+        }
+       
+        
+        @keyframes scroll-up {
+            0% {
+                transform: translateY(0); /* Texte affiché en haut */
+            }
+            100% {
+                transform: translateY(-100%); /* Texte défilant vers le haut */
+            }
+        }
+        
+
         .elips{
             width: 10px;
             height: 10px;
@@ -55,7 +115,7 @@
         .actions{
             position: absolute;
             display: flex;
-            flex-direction: column;
+            /* flex-direction: column; */
             align-items: center;
             justify-content: center;
             bottom: 0px;
