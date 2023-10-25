@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style_caroussel.css">
+    <link rel="stylesheet" href="styleresponsive.css">
 </head>
 <body>
     <header>
@@ -25,33 +26,77 @@
                 <li><a href="contact.html">Contacts</a> </li>
             </ul>
         </nav>
+        <div id="menue-bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div id="croix">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div id="menue-lateral">
+            <div class="champ-lat">
+                <a href="index.html">
+                    <span><i class="fa-solid fa-house"></i></span>  &nbsp;  <span>Accueil</span>
+                   </a> 
+            </div>
+            <div class="champ-lat">
+                <a href="apropos.html">
+                    <span><i class="fa-solid fa-file-circle-question"></i></span> &nbsp; <span>A propos</span>
+                   </a> 
+            </div>
+            <div class="champ-lat">
+
+            </div>
+            <div class="champ-lat">
+                <a href="btp.html">
+                    <span><i class="fa-solid fa-person-digging"></i></span> &nbsp; <span>BTP</span>
+                   </a> 
+            </div>
+            <div class="champ-lat">
+                <a href="nettoyage.html">
+                    <span><i class="fa-solid fa-hand-sparkles"></i></span> &nbsp; <span>Nettoyage & entretien</span>
+                   </a> 
+            </div>
+            <div class="champ-lat">
+                <a href="commerce.html">
+                    <span><i class="fa-solid fa-cart-shopping"></i></span> &nbsp; <span>Commerce general</span>
+                   </a>
+            </div>
+            <div class="champ-lat">
+                <a href="fourniture.html">
+                    <span><i class="fa-solid fa-egg"></i></span> &nbsp; <span>Aviculture</span>
+                   </a>
+            </div>
+            <div class="champ-lat">
+                <a href="contact.html">
+                    <span><i class="fa-solid fa-square-phone"></i></span> &nbsp; <span>Contactez nous</span>
+                   </a> 
+            </div>
+
+           <div class="logo-lateral">
+            <img src="image/logo-global-services.png" alt="">
+           </div>
+        </div>
         <div id="listservices">
             <ul>
-                <li><a href="btp.html">BTP</a></li>
-                <li><a href="nettoyage.html">Entretient / Nettoyage</a></li>
-                <li><a href="fourniture.html">Fourniture Consommables bureau</a></li>
+                <li><a href="btp.html">BTP ( Construction & Rehabilitation )</a></li>
+                <li><a href="nettoyage.html">Nettoyage & Entretient</a></li>
                 <li><a href="commerce.html">Commerce general</a></li>
+                <li><a href="fourniture.html">Aviculture</a></li>
             </ul>
         </div>
     </header>
-    <section id="presentation">
-        <div class="container">
-            <div class="caroussels">
-                <div class="caroussel">
-                    <div class="slide deux">
-                        <img src="image/nettoyage1.png" alt="image2">
-                    </div>
-    
-                </div>
-            </div>      
-    
-        </div>
-        <div class="accueil">
-            <h1>NETTOYAGE & ENTRETIEN</h1>
-            L’hygiène et la propreté font parties de nos priorités. L’entreprise GLOBAL SERVICES  a en son sein, une équipe vaillante, qui vous propose ses services de nettoyage de locaux à usage professionnel et personnel. Nos services sont destinés aux entreprises de service, aux industries et aux individuels. Les surfaces entretenues sont très souvent les Entrepôts, les Bureaux, les Toîlettes, Salles d’attente, Halls, Escaliers, Tapis, Appareils de bureau, Machines industrielles etc. Le personnel, hautement qualifié bénéficie d’une large expérience dans le domaine de l’entretien. Découvrez nos offres dans les rubriques de ce dossier.
+        <div class="entete">
+            <a href="index.html"><div class="retour"><i class="fa-solid fa-arrow-left"></i></div></a>
             
+            <div class="titre">NETTOYAGE & ENTRETIEN</div>
         </div>
-    </section>
+        <div class="page">
+            <p>
+                L’hygiène et la propreté font parties de nos priorités. L’entreprise GLOBAL SERVICES  a en son sein, une équipe vaillante, qui vous propose ses services de nettoyage de locaux à usage professionnel et personnel. Nos services sont destinés aux entreprises de service, aux industries et aux individuels. Les surfaces entretenues sont très souvent les Entrepôts, les Bureaux, les Toîlettes, Salles d’attente, Halls, Escaliers, Tapis, Appareils de bureau, Machines industrielles etc. Le personnel, hautement qualifié bénéficie d’une large expérience dans le domaine de l’entretien. Découvrez nos offres dans les rubriques de ce dossier.
+            </p>
+         
+        </div>
+
     <section>
         <h1 class="sections">SERVICE NETTOYAGE</h1>
         <div class="departements">
@@ -71,21 +116,18 @@
                         <li>Nettoyage et Lustration des vitres</li>
                         <li>Enlèvement des déchets</li>
                     </ul>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+     
                     
                 </p>
             </div>
             <div class="illustration">
-                <img src="image/aspirateur.png" alt="">
-                <img src="image/materiel.png" alt="">
-                <img src="image/balayage.jpg" alt="">
+                <div class="image-ill">
+                        <img src="image/materiels.png" alt="">                        
+                    </div>
+                    <div class="image-ill">
+                        <img src="image/balayage.jpg" alt="">
+    
+                </div>
             </div>
         </div>
 
@@ -101,54 +143,14 @@
                 </p>
             </div>
             <div class="illustration">
-                <img src="image/fin-chantier.png" alt="">
-                <img src="image/gsbtp.jpg" alt="">
-            </div>
-        </div>
-
-        <h1 class="sections">DESINSECTISATION</h1>
-        <div class="departements">
-            <div class="desc">
-                <p>
-                    Désinsectisation et Fumigation
-                    <ul>
-                        <li>Introduction d’un gaz sous forme de fumée dans l’atmosphère du local</li>
-                        <li>Prévention de la propagation des parasites, insectes, porteurs de germes et réduction des risques de dommages sur les marchandises</li>
-                        <li>Fumigation des camions transporteurs de produits alimentaires</li>
+                <div class="image-ill">
+                    <img src="image/fin-chantier.png" alt="">
                         
-                    </ul>
-                    
-                    
-                    
-                </p>
-            </div>
-            <div class="illustration">
-                <img src="image/Desinsectisation.png" alt="">
-                <!-- <img src="image/gsbtp.jpg" alt=""> -->
-            </div>
-        </div>
+                </div>
+                <div class="image-ill">
+                    <img src="image/gsbtp.jpg" alt="">
 
-        <h1 class="sections">DERATISATION</h1>
-        <div class="departements">
-            <div class="desc">
-                <p>
-                    <ul>
-                        <li>Dératisation</li>
-                        <li>Pose d’appareils propulseurs d’ondes Anti-Rats</li>
-                        <li>Boucher les rayons d’accès de ces êtres indésirables</li>
-                        <li>Installation d’appareils ultrasons</li>
-                        <li>Pose des pièges électriques dans des endroits stratégiques</li>
-                    </ul>
-                    
-                    
-                    
-                    
-                    
-                </p>
-            </div>
-            <div class="illustration">
-                <img src="image/Dératisation.png" alt="">
-                <!-- <img src="image/gsbtp.jpg" alt=""> -->
+                </div>
             </div>
         </div>
         <h1 class="sections">ENTRETIEN PAYSAGER</h1>
@@ -168,10 +170,59 @@
                 </p>
             </div>
             <div class="illustration">
-                <img src="image/jardinage.png" alt="">
+                <div class="image-ill">
+                    <img src="image/jardinage.png" alt="">                    
+                </div>
+                <div class="image-ill">
                 <img src="image/jardinage2.jpg" alt="">
+                </div>
             </div>
         </div>
+        <h1 class="sections">DESINSECTISATION</h1>
+        <div class="departements">
+            <div class="desc">
+                <p>
+                    Désinsectisation et Fumigation
+                    <ul>
+                        <li>Introduction d’un gaz sous forme de fumée dans l’atmosphère du local</li>
+                        <li>Prévention de la propagation des parasites, insectes, porteurs de germes et réduction des risques de dommages sur les marchandises</li>
+                        <li>Fumigation des camions transporteurs de produits alimentaires</li>
+                        
+                    </ul>
+                    
+                    
+                    
+                </p>
+            </div>
+            <div class="illustration">
+                <div class="image-ill">
+                    <img src="image/Desinsectisation.png" alt="">                   
+                </div>
+
+            </div>
+        </div>
+
+        <h1 class="sections">DERATISATION</h1>
+        <div class="departements">
+            <div class="desc">
+                <p>
+                    <ul>
+                        <li>Dératisation</li>
+                        <li>Pose d’appareils propulseurs d’ondes Anti-Rats</li>
+                        <li>Boucher les rayons d’accès de ces êtres indésirables</li>
+                        <li>Installation d’appareils ultrasons</li>
+                        <li>Pose des pièges électriques dans des endroits stratégiques</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="illustration">
+                <div class="image-ill">
+                    <img src="image/Dératisation.png" alt="">                    
+                </div>
+ 
+            </div>
+        </div>
+       
     </section>
    
     <footer>

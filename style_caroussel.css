@@ -19,7 +19,7 @@
 
 .departement{
 position: absolute;
-top: 10px;
+top: 30px;
 color: rgb(252, 119, 23);
 left: 50%;
 transform: translateX(-50%);

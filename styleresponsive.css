@@ -59,6 +59,67 @@
         width: 60px;
         margin: 30px;
         }
+        .page{
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: rgba(0, 0, 0, 0.726);
+        color: white;
+        padding: 20px 10px;
+        font-size: 0.8rem;
+        line-height: 1.6;
+      
+        }
+        .departements{
+            display: flex;
+            flex-direction: column;
+            padding-left: 10px;
+            padding: 10px;
+            max-width: 100%;
+            line-height: 1.7;
+            margin: 20px auto;
+            box-sizing: border-box;
+            }
+       .illustration{
+        display: flex;
+        width: 90vw;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items:end;
+    }
+    .departements .image-ill{
+        flex: 1 0 40%;
+        margin: 10px;
+        }
+        .departements img{
+            width: 100%;
+            margin: 0px;
+            }
+        .entete{
+            position: sticky;
+            top: 50px;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+        margin-top: 20px;
+        /* border: solid; */
+        box-sizing: border-box;
+        padding: 10px 0;
+        background-color: white;
+        box-shadow: 2px 2px 5px rgb(180, 180, 180);
+       
+        }
+        .entete a{
+        text-decoration: none;
+        color: black;
+        }
+        .retour{
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        }
     .accueil{
         position: absolute;
         left: 50%;
@@ -95,16 +156,16 @@
             }
         .departement{
             position: absolute;
-            top: 10px;
+            top: 60%;
             color: rgb(252, 119, 23);
             left: 50%;
             transform: translateX(-50%);
-            background-color: rgba(0, 0, 0, 0.411);
+            background-color:inherit;
             padding: 0 20px;
             border-radius: 30px;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             width: 100%;
-            display: none;
+            /* display: none; */
             }
         .accueil h1{
         font-size: 0.9rem;
@@ -158,8 +219,8 @@
             
             }
             .actions a{
-                width: 60%;
-                margin: 10px;
+                width: 80%;
+                margin: 10px 0;
                 text-decoration: none;
                 color: rgb(252, 119, 23);
                 outline: none;
@@ -175,6 +236,7 @@
                 justify-content: center;
                 padding-top: 0px;
                 padding: 5px;
+                padding-bottom: 10px;
                 font-size: inherit;
                 margin:0 10px;
                 
