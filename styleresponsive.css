@@ -20,12 +20,45 @@
     background-color: white;
     width: 40px;
     }
-    /* #presentation{
-    display: none;
-    } */
-    /* #presentations{
+    #menue-bar{
         display: initial;
-        } */
+        color: white;
+        margin: 0 15px;
+        font-size: 1.2rem;
+        }
+        #croix{
+            
+            color: white;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+        #menue-lateral{
+            display: initial;
+        position: fixed;
+        top: 50px;
+        left: -200%;
+        width: 85vw;
+        height: 100vh;
+        background-color:rgba(0, 0, 0, 0.904) ;
+        box-sizing: border-box;
+        color: white;
+        transition: 0.5s;
+        padding: 50px 20px ;
+        }
+        #menue-lateral a{
+            text-decoration: none;
+        }
+        .champ-lat{
+            margin: 20px 0;
+            
+        }
+        .logo-lateral{
+        text-align: center;
+        }
+        .logo-lateral img{
+        width: 60px;
+        margin: 30px;
+        }
     .accueil{
         position: absolute;
         left: 50%;
@@ -38,7 +71,7 @@
         text-align: center;
         align-items: center;
         padding: 5px;
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         
         }
         #presentation button{
@@ -79,25 +112,25 @@
         }
         #mot{
         /* display: none; */
-        animation: scroll-up 10s linear infinite; /* 10s est la durée de l'animation, vous pouvez ajuster selon vos besoins */
-
+        animation: scroll-up 20s linear infinite;
+        
         }
 
         .mots {
             position: absolute;
             top: 50px;
-            height: 30%; /* Hauteur maximale de la div */
-            overflow: hidden; /* Pour cacher le texte qui dépasse */
+            height: 50px; 
+            overflow: hidden; 
             padding: 5px;
         }
        
         
         @keyframes scroll-up {
             0% {
-                transform: translateY(0); /* Texte affiché en haut */
+                transform: translateY(0); 
             }
             100% {
-                transform: translateY(-100%); /* Texte défilant vers le haut */
+                transform: translateY(-100%); 
             }
         }
         
@@ -152,7 +185,18 @@
     text-align: center;
     justify-content: center;
     margin: 20px 0;
+    font-size: 0.8rem;
     }
+
+    #suite{
+    display: initial;
+    font-weight: bold;
+    font-style: italic;
+    
+    }
+ #texteCache{
+display: none;
+}
     .confiances{
     padding-top: 20px;
     padding-bottom: 10px;

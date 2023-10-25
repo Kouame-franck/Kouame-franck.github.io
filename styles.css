@@ -37,6 +37,9 @@ header a{
     color: rgb(255, 255, 255);
     /* font-weight: bold; */
 }
+#suite{
+display: none;
+}
 
 #listservices{
 position: absolute;
@@ -81,6 +84,15 @@ padding-right: 10px;
 #logo img{
 width: 50px;
 margin-right: 20px;
+}
+#menue-bar{
+display: none;
+}
+#croix{
+display: none;
+}
+#menue-lateral{
+display: none;
 }
 
 #presentation{
@@ -206,6 +218,9 @@ margin-top: 50px;
 #apropos #mission{
 text-align: start;
 line-height: 1.5;
+}
+.text-contenaire{
+    line-height: 1.5;
 }
 
 .sections{
