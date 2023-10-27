@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style_caroussel.css">
     <link rel="stylesheet" href="styleresponsive.css">
@@ -143,7 +146,7 @@
             <div class="mots">
                 <p id="mot">
                     Global Services ,votre passerelle vers une multitude de services et de solutions de qualité. <br>
-                    Global Services exerce dans le BTP,le Nettoyage professionnel, Le Commerce Général,  l'Aviculture. <br> 
+                    Nous exercons dans le BTP,le Nettoyage professionnel, Le Commerce Général et  l'Aviculture. <br> 
                     Explorez notre site web pour découvrir nos services, nos projets passés, et les témoignages de nos clients satisfaits. N'hésitez pas à nous contacter si vous avez des questions ou si vous avez besoin de conseils. Nous sommes là pour vous aider  à trouver des solutions adaptées à vos besoins par
                     des services de qualités supérieures et à des coûts raisonnables .
                 </p>
@@ -160,11 +163,11 @@
 
   
 
-    <section id="apropos">
+    <section id="apropos" class="">
         <h1 class="sections">NOTRE MISSION</h1>
-        <div class="text-contenaire">
+        <div class="text-contenaire animer">
             <p id="mission">
-                GLOBAL SERVICES est une SARL qui a pour mission de simplifier la vie de nos clients en mettant à leur disposition une gamme complète de services diversifiés, tout en offrant l'expertise nécessaire pour répondre à leurs besoins. Nous sommes fiers d'être votre guichet unique pour une multitude de solutions dans les secteurs du BTP, de l'entretien et du nettoyage, de la fourniture de consommables de bureau, et du commerce général.
+                GLOBAL SERVICES est une SARL qui a pour mission de simplifier la vie de ses clients en mettant à leur disposition une gamme complète de services diversifiés, tout en offrant l'expertise nécessaire pour répondre à leurs besoins. Nous sommes fiers d'être votre guichet unique pour une multitude de solutions dans les secteurs du BTP, de l'entretien et du nettoyage, de la fourniture de consommables de bureau, et du commerce général.
                 <span id="suite" onclick="toggleText()">..Lire la suite</span>
             </p>
             <div id="texteCache" >
@@ -176,8 +179,8 @@
         
       
         <p id="confiance">Ils nous font confiance à l'image de nombreux autres partenaires satisfaits.</p>
-        <div class="confiances">
-        <div class="partenaires">
+        <div class="confiances ">
+        <div class="partenaires ">
             <div class="partenaire">
                 <img src="image/alp.jpeg" alt="">
             </div>
@@ -210,7 +213,7 @@
                     </div>
                     <div class="texts">
                         <span>
-                            Exerçant tous les métiers de la construction à la réhabilitation, GLOBAL SERVICES développe une offre globale avec de nouvelles compétences... 
+                            Exerçant tous les métiers de la construction à la réhabilitation, GLOBAL SERVICES développe une offre avec de nouvelles compétences... 
                         </span>
                         <a href="btp.html"><button class="voirplus">voir plus ...</button></a>
                         
@@ -237,7 +240,7 @@
               
             </div>
            
-            <div class="service">
+            <div class="service ">
                 <h2>Commerce general</h2>
                 <div class="description">
                     <div class="image">
@@ -274,8 +277,8 @@
 
         </div>
     </section>
-    <section id="contact">
-        <h1 class="sections">CONTACTEZ NOUS</h1>
+    <section id="contact"  class="">
+        <h1 class="sections ">CONTACTEZ NOUS</h1>
         <div class="containers">
             <div class="coordonnees">
                 <div class="coor princip">
@@ -294,23 +297,28 @@
             <a href="https://www.google.com/maps/search/global+services/@5.3669469,-3.9757614,14z/data=!3m1!4b1?authuser=0&entry=ttu">
                 <div class="coor">
                       <i class="fa-solid fa-location-dot"></i>
-                       <div><span> Abidjan,cocody riviera palmeraie </span></div>
+                       <div><span> Abidjan,cocody riviera palmeraie. </span> <span style="color: blue;">voir...</span></div>
                 </div>
             </div> 
             </a>
     
-            <form action="">
+            <form id="formContact" action="" class="">
+                <small class="petit"></small>
                 <div class="champs">
                     <label for="nom">Votre nom :</label>
-                    <input type="text" name="nom">
+                    <input id="nom" type="text" name="nom">
                 </div>
                 <div class="champs">
                     <label for="email">Votre email :</label>
-                    <input type="text" name="email">
+                    <input id="mail" type="text" name="email">
+                </div>
+                <div class="champs">
+                    <label for="objet">Objet :</label>
+                    <input id="objet" type="text" name="objet">
                 </div>
                 <div class="champsm">
                     <label for="message">Votre message :</label>
-                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                    <textarea id="text" name="message" id="" cols="30" rows="10"></textarea>
                 </div>
                 <input type="submit" value="Envoyer" id="envoyer">
     
@@ -327,10 +335,12 @@
             <h3>NOUS JOINDRE</h3> 
             <div >
                 <div class="coo">
-                    <i class="fa-solid fa-phone"></i>  <span>+225 07 00 00 00 00</span>
+                    <i class="fa-solid fa-phone"></i>  
+                    <span>+225 27 22 59 68 48</span>
+                  
                 </div>
                 <div class="coo">
-                    <i class="fa-solid fa-envelope"></i> <span>contact@globaleservices.com</span>
+                    <i class="fa-solid fa-envelope"></i> <span>contact@globaleservices-ci.com</span>
                 </div>
                 <div class="coo">
                     <i class="fa-solid fa-location-dot"></i>    <span> Abidjan,cocody riviera palmeraie </span>
@@ -347,12 +357,14 @@
     </div>
    
     <span id="icones">
-        <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i>
-         <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-linkedin"></i>
+       <a href="https://www.facebook.com/secretaire.medi?locale=fr_FR"><i class="fa-brands fa-facebook"></i></a>  <a href=""><i class="fa-brands fa-instagram"></i></a>
+         <a href=""><i class="fa-brands fa-twitter"></i></a> <a href=""><i class="fa-brands fa-linkedin"></i></a>
     </span>
     <p>Copyright &copy; 2023 Global Services Abidjan, Tous drois réservés || realisé par Sublime Code</p>
 </footer>
     <script src="main.js"></script>
     <script src="carou.js"></script>    
+    <script src="contact.js"></script>
+    <script src="animation.js"></script>
 </body>
 </html>

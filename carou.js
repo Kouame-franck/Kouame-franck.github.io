@@ -53,7 +53,6 @@ function prevSlide(){
 }
 
 function autoDefil(){
-   console.log(long);
     compteur ++;
     if(compteur<nbr  ){ 
         caroussel.style.transition = "0.8s";
