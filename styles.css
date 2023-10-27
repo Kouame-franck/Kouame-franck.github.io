@@ -182,7 +182,7 @@ background-color: rgb(252, 119, 23);
    
     .entete{
         position: sticky;
-        top: 50px;
+        top: 60px;
     display: flex;
     justify-content: center;
     margin: 10px 0;
@@ -192,6 +192,7 @@ background-color: rgb(252, 119, 23);
     padding: 10px 0;
     background-color: white;
     box-shadow: 2px 2px 5px rgb(180, 180, 180);
+    z-index: 3;
    
     }
     .entete a{
@@ -280,19 +281,33 @@ font-size: 2rem;
     scroll-behavior: smooth;
 
 }
+.desc{
+font-weight: bold;
+opacity: 0.8;
+
+}
 .illustration{
 display: flex;
 width: 70%;
 align-items: end;
 }
 .image-ill{
-flex: 1 0 50%;
+flex: 1 0 45%;
 box-sizing: border-box;
+border: solid rgb(252, 119, 23);
+border-radius: 5px;
+margin: 10px;
+padding: 0;
+}
+.transparent{
+border: none;
 }
 .image-ill img{
-    width: 90%;
-    margin: 20px 10px;
+    width: 100%;
+    /* margin: 20px 10px; */
     border-radius: 5px;
+    margin: 0;
+    transform: translate(-15px,15px);
     }
 .noservice{
 display: flex;
